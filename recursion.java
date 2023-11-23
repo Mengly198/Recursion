@@ -1,15 +1,15 @@
 public class recursion {
   public static void main(String[] args) {
 
-    //call your recursion fuction
-    //print result
+    reverseString("Hello"); 
 
-   }
-    
-    public double.... recursionFunction {
-      //implement your case algorithm
-      return....
+  }
+
+  public static String reverseString(String str) {
+    if (str.isEmpty()) {
+        return str;
     }
-  
+    return reverseString(str.substring(1)) + str.charAt(0);
 }
-    
+
+}
